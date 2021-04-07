@@ -1,0 +1,4 @@
+﻿style: dark
+serverSoftware: vanilla
+version: 0.0.1-alpha01
+serverVersion: 1.16.5
