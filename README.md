@@ -7,3 +7,7 @@ Minecraft server Windows Forms UI!
 3. Unzip
 4. Run minecraftserver.exe
 5. Ready!
+
+
+
+yeah i know this doesnt even starts server
