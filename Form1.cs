@@ -29,19 +29,25 @@ namespace MinecraftServer
         private void Form1_Load(object sender, EventArgs e)
         {
             // Read settings save file
-            string settings = File.ReadAllText("./AppSettings.txt");
-            if (settings.Contains("style: dark"))
-            {
-
-                this.BackColor = Color.FromKnownColor(KnownColor.GrayText);
-                this.ForeColor = Color.White;
-                this.tabPage1.BackColor = Color.FromArgb(46, 43, 43);
-                this.tabPage1.ForeColor = Color.White;
-                this.Refresh();
-            }
+            string MemAlloc = File.ReadAllLines("./AppSettings.txt")[4];
+            Debug.WriteLine(MemAlloc);
+            
             // Set variables
             string[] worldsettings = new string[5];
             worldsettings[0] = null;
+            if ( File.Exists("./server/server.exe") )
+            {
+                Debug.WriteLine("bedrock server detected, not downloading");
+            }
+            else if (File.Exists("./server/server.jar"))
+            {
+                Debug.WriteLine("java server detected, not downloading");
+            }
+            else 
+            {
+                Debug.WriteLine("No server SW detected. Asking user...");
+            }
+            MessageBox.Show("Select server?", "No server!", MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
         }
         private object syncGate = new object();
         private Process process;

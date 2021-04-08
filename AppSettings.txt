@@ -2,3 +2,5 @@
 serverSoftware: vanilla
 version: 0.0.1-alpha01
 serverVersion: 1.16.5
+memoryAlloc: 1024
+AdvMemAlloc: 1024
