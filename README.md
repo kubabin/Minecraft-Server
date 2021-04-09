@@ -9,5 +9,3 @@ Minecraft server Windows Forms UI!
 5. Ready!
 
 
-
-yeah i know this doesnt even starts server
