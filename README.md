@@ -9,5 +9,5 @@ Minecraft server Windows Forms UI!
 5. Ready!
 
 
-Note: I dont released anything due to system reinstallation.
+
 Next release will be soon!
