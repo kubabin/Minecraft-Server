@@ -11,3 +11,7 @@ Minecraft server Windows Forms UI!
 
 
 Next release will be soon!
+
+# How to contribute
+To contribute, if you dont have github account, create one.
+If you already have, just click "Fork" under your account profile picture.
